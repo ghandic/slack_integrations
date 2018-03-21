@@ -1,5 +1,5 @@
 #!/bin/bash
-SLACKAPIKEY=`osascript -e 'set T to text returned of (display dialog "Enter your Slack OAuth API key" buttons {"Cancel", "OK"} default button "OK" default answer "")'`
+SLACKAPIKEY=`osascript -e 'set T to text returned of (display dialog "Enter your Slack OAuth API key" buttons {"Cancel", "OK"} default button "OK" default answer "" with hidden answer)'`
 
 # Setting times to sleep in the script
 ENDHOUR=`osascript -e 'set T to text returned of (display dialog "What hour do you leave work?" buttons {"Cancel", "OK"} default button "OK" default answer 17)'`
